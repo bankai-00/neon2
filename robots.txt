@@ -1,0 +1,25 @@
+# Neonfolio robots.txt - SEO Configuration
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /search/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://neonfolio.com/sitemap.xml
+Sitemap: https://neonfolio.com/sitemap-pages.xml
+
+# Google Bot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

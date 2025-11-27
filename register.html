@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - Create Your Neonfolio Account</title>
+  <meta name="description" content="Create a free Neonfolio account - Start showcasing your creative portfolio today with our modern neon-themed platform.">
+  <meta name="keywords" content="register, create account, neonfolio signup, portfolio platform, free account">
+  <meta name="author" content="Ashutosh Sharma">
+  <meta name="theme-color" content="#050507">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://neonfolio.com/pages/register.html">
+  <link rel="stylesheet" href="../css/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Neonfolio Home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+          <defs>
+            <linearGradient id="logo-grad" x1="0" x2="1">
+              <stop offset="0" stop-color="#00F5FF"/>
+              <stop offset="1" stop-color="#FF33C8"/>
+            </linearGradient>
+          </defs>
+          <circle cx="16" cy="16" r="10" fill="none" stroke="url(#logo-grad)" stroke-width="2"/>
+        </svg>
+        Neonfolio
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">☰</button>
+        <ul id="nav-list" class="nav-list" role="menubar">
+          <li role="none"><a role="menuitem" href="../index.html">Home</a></li>
+          <li role="none"><a role="menuitem" href="about.html">About</a></li>
+          <li role="none"><a role="menuitem" href="showcase.html">Showcase</a></li>
+          <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+          <li role="none"><a role="menuitem" href="login.html">Login</a></li>
+          <li role="none"><a class="btn btn-primary" href="register.html" class="active">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <div class="register-container">
+      <div class="register-card">
+        <h2>Create Account</h2>
+        <p class="register-subtitle">Join Neonfolio today</p>
+
+        <form class="register-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" minlength="8" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+          </div>
+
+          <div class="form-group" style="margin-top:8px;">
+            <label style="font-size:0.95rem; cursor:pointer; display:inline-flex; align-items:center; gap:8px;">
+              <input id="showPasswordRegister" type="checkbox" style="width:16px;height:16px;"> <span>Show passwords</span>
+            </label>
+          </div>
+
+          <label style="display: flex; align-items: flex-start; gap: 8px; font-weight: 400; cursor: pointer;">
+            <input type="checkbox" name="terms" required style="margin-top: 4px;">
+            <span style="font-size: 0.9rem;">I agree to the Terms of Service and Privacy Policy</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Create Account</button>
+        </form>
+
+        <div class="register-footer">
+          Already have an account? <a href="login.html">Sign in here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <p style="font-weight: 600; color: var(--text-primary);">Neonfolio</p>
+        <p class="muted">A modern portfolio platform with a neon aesthetic.</p>
+        <p class="muted">&copy; 2025 — All rights reserved.</p>
+      </div>
+      <div style="justify-self: end;">
+        <div class="socials">
+          <a href="#" aria-label="Twitter" class="social" title="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.45 7-7 7-7s-1 6-5 8V7a4.5 4.5 0 008-4z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="social" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="#" aria-label="Email" class="social" title="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Simple form submission. Connect to a backend to process registrations.');
+        });
+      }
+    });
+  </script>
+  <script defer src="../js/nav-utils.js"></script>
+  <script defer src="../js/auth.js"></script>
+  <script defer src="../js/register.js"></script>
+</body>
+</html>
+
